@@ -17,8 +17,8 @@ primary key (item_id)
 insert into products (product_name, department_name, price, stock_quantity)
 values ("bags", "accessory", 45, 12), ("shoes", "shoes", 105, 41),
         ("earings", "accessory", 9, 112), ("dresses", "clothing", 21, 203), 
-        ("glasses", "accessory", 73, 67), ("skirts", "clothing", 33, 43),
+        ("glasses", "accessory", 73, 67), ("skirts", "clothing", 33, 4),
         ("bracelets", "accessory", 24, 72), ("tops", "clothing", 41, 83),  
-        ("chains", "accessory", 66, 99), ("pants", "clothing", 44, 34); 
+        ("chains", "accessory", 66, 2), ("pants", "clothing", 44, 34); 
 
 
