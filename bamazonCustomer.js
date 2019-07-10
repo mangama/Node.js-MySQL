@@ -50,7 +50,7 @@ function orderingProducts() {
                     orderingProducts();
                 } else {
                     // However, if your store does have enough of the product, you should fulfill the customer's order.
-                    console.log("You successfully purchased" + res[0].stock_quantity);
+                    console.log("You successfully purchased " + numOfItem + " " + res[0].product_name);
 
                     // This means updating the SQL database to reflect the remaining quantity.
                     var updatedNumOfItem = res[0].stock_quantity - numOfItem;
@@ -65,7 +65,7 @@ function orderingProducts() {
                             console.log("Thank for shopping with us!");
                             viewAll();
                             connection.end();
-                            
+
                         });
                 }
 
