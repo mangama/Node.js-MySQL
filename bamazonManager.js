@@ -38,7 +38,7 @@ function menu() {
 
 //-----------------------------------Need to work on the rest------------------------
 
-//Displays all items
+//Displays all options
 function viewProductForSale() {
     connection.query("select * from products", function (err, res) {
         if (err) throw err;
@@ -56,9 +56,5 @@ connection.query("select * from products where stock_quantity <= 5", function (e
 });
 }
 
-// connection.connect(function() {
-//     console.log(`Connected as id ${connection.threadId}`);
-//     orderingProducts();
-// });
 
 menu();

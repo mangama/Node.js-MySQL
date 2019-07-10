@@ -9,7 +9,6 @@ var connection = mysql.createConnection({
     port: 8889,
     database: "bamazon_db"
 });
-//  connection.connect();
 
 //Displays all items
 function viewAll() {
@@ -36,10 +35,10 @@ function orderingProducts() {
     ]).then(function (answer) {
         var numOfItem = answer.quantity;
         var chosenProduct = answer.productName;
-        // console.log(chosenProduct);40
         connection.query("select * from products where ? ", { item_id: chosenProduct }, function (err, res) {
             if (err) throw err;
-            console.log(res);
+            // console.log(res);
+            //
             if (res.length === 0) {
                 console.log("This product is not part of our inventory. Please, enter another one.")
                 orderingProducts();
@@ -74,10 +73,5 @@ function orderingProducts() {
         });
     });
 }
-
-// connection.connect(function() {
-//     console.log(`Connected as id ${connection.threadId}`);
-//     orderingProducts();
-// });
 
 orderingProducts();
