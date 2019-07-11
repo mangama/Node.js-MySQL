@@ -1,6 +1,6 @@
 # Node.js-MySQL
 
-Challenge #1: Customer View (Minimum Requirement)
+### Challenge #1: Customer View 
 
 The objective of this application was to create a database called bamazon that contains a "products" table with the columns:  
 * item_id (unique id for each product)
@@ -8,11 +8,14 @@ The objective of this application was to create a database called bamazon that c
 * department_name
 * price (cost to customer)
 * stock_quantity (how much of the product is available in stores)
+ 
+### How does the application works?
 
 Populated this database with around 10 different products. 
+![Table ](https://github.com/mangama/Node.js-MySQL/blob/master/images/Table.png)
 
 
-
+![updatedTable] (https://github.com/mangama/Node.js-MySQL/blob/master/images/updatedTable.png)
 
 Then create a Node application called bamazonCustomer.js. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
 The app should then prompt users with two messages.
