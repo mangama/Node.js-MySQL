@@ -29,7 +29,7 @@ If the number of items requested is bigger than the quantity available, the mess
 - If there is suffucient items available, the detaills of the order will display along with an updated table showing the new inventory. The screenshot below shows an examplean example:
     ![updatedTable](https://github.com/mangama/Node.js-MySQL/blob/master/images/updatedTable.png)
 
-Deployment link: https://mangama.github.io/Node.js-MySQL/
+Updated Porfolio Link: https://mangama.github.io/Professional_Portfolio/
 
 
 
