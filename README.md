@@ -14,8 +14,8 @@ The table was populated with 10 different products.
  ### How does the application work?
 
 Navigate to the Node.js-MySQL folder and run the following commands:
-1. npm install mysql inquirer
-2. node bamazonCustomer.js.
+1.  npm install mysql inquirer
+2.  node bamazonCustomer.js.
 3. Then the promt will display a request (Please enter the ID of the product that you would like to buy.) and display the entire table.
 ![Table](https://github.com/mangama/Node.js-MySQL/blob/master/images/Table.png)
 
