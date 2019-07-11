@@ -10,16 +10,20 @@ var connection = mysql.createConnection({
     database: "bamazon_db"
 });
 
-//Displays all items
-function viewAll() {
-    connection.query("select * from products", function (err, res) {
-        if (err) throw err;
-        console.table(res);
 
-    })
-}
 
 function orderingProducts() {
+    console.log("\n ");
+
+    //Displays all items
+    function viewAll() {
+        connection.query("select * from products", function (err, res) {
+            if (err) throw err;
+            console.log("\n ");
+            console.table(res);
+        })
+    }
+   
     inquirer.prompt([
         {   // The first should ask them the ID of the product they would like to buy. 
             name: "productName",
@@ -33,19 +37,21 @@ function orderingProducts() {
         }
 
     ]).then(function (answer) {
+        console.log("\n");
         var numOfItem = answer.quantity;
         var chosenProduct = answer.productName;
+
         connection.query("select * from products where ? ", { item_id: chosenProduct }, function (err, res) {
             if (err) throw err;
             // console.log(res);
             //
             if (res.length === 0) {
+
                 console.log("This product is not part of our inventory. Please, enter another one.")
                 orderingProducts();
             } else {
 
                 if (numOfItem > res[0].stock_quantity) {
-
                     console.log("Insufficient quantity!")
                     orderingProducts();
                 } else {
@@ -61,11 +67,10 @@ function orderingProducts() {
                             if (err) throw err;
                             // Once the update goes through, show the customer the total cost of their purchase
                             console.log("The total cost is " + res[0].price * numOfItem + "$" + ".");
-
                             console.log("Thank for shopping with us!");
+                            orderingProducts();
                             viewAll();
                             connection.end();
-
                         });
                 }
 
@@ -75,3 +80,5 @@ function orderingProducts() {
 }
 
 orderingProducts();
+
+
