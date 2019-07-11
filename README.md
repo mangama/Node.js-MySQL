@@ -2,28 +2,28 @@
 
 ### Challenge #1: Customer View 
 
-The objective of this application was to create a database called bamazon that contains a "products" table with the columns:  
-* item_id (unique id for each product)
-* product_name (Name of product)
-* department_name
-* price (cost to customer)
-* stock_quantity (how much of the product is available in stores)
+    The objective of project was to build a database called bamazon that contains a "products" table with the columns named as follow:  
+    * item_id (unique id for each product)
+    * product_name (Name of product)
+    * department_name
+    * price (cost to customer)
+    * stock_quantity (how much of the product is available in stores)
  
-### How does the application works?
+### How does the application work?
 
-Populated this database with around 10 different products. 
-![Table ](https://github.com/mangama/Node.js-MySQL/blob/master/images/Table.png)
-
-
-![updatedTable] (https://github.com/mangama/Node.js-MySQL/blob/master/images/updatedTable.png)
-
-Then create a Node application called bamazonCustomer.js. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
-The app should then prompt users with two messages.
+    Populated this database with around 10 different products. 
+    ![Table](https://github.com/mangama/Node.js-MySQL/blob/master/images/Table.png)
 
 
+    ![updatedTable](https://github.com/mangama/Node.js-MySQL/blob/master/images/updatedTable.png)
 
-The first should ask them the ID of the product they would like to buy.
-The second message should ask how many units of the product they would like to buy.
+    Then create a Node application called bamazonCustomer.js. Running this application will first display all of the items available for sale. Include the ids, names, and prices of products for sale.
+    The app should then prompt users with two messages.
+
+
+
+    The first should ask them the ID of the product they would like to buy.
+    The second message should ask how many units of the product they would like to buy.
 
 
 
