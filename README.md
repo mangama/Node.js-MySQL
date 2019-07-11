@@ -18,7 +18,14 @@ the promt will display a request (Please enter the ID of the product that you wo
 ![Table](https://github.com/mangama/Node.js-MySQL/blob/master/images/Table.png)
 
 If the user type an ID that is not listed, a message requesting for an existent one will display:
-![noValidID](https://github.com/mangama/Node.js-MySQL/blob/master/images/updatedTable.png)
+![noValidID](https://github.com/mangama/Node.js-MySQL/blob/master/images/noValidID.png)
+
+
+If the ID is valid, a second promt (Please enter the number of item(s) that you would like to buy.) will display and :
+If the number of items requested is bigger than the quantity available, the message below displays:
+![notEnoughItem](https://github.com/mangama/Node.js-MySQL/blob/master/images/notEnoughItem.png)
+
+If there is enoght items available, an example of the screenshot below of the results and the updated table after purchase.
 
 ![updatedTable](https://github.com/mangama/Node.js-MySQL/blob/master/images/updatedTable.png)
 
