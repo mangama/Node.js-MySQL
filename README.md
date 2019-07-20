@@ -11,7 +11,8 @@ The objective of project was to build a database called bamazon that contains a 
 * stock_quantity (how much of the product is available in stores)
 The table was populated with 10 different products. 
  
- ### How does the application work?
+
+### How does the application work?
 
 Navigate to the Node.js-MySQL folder and run the following commands:
 1.  npm install mysql inquirer
